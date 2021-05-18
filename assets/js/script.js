@@ -1,1 +1,1 @@
-console.log(5);
+var requestUrl = 'https://superheroapi.com/api/10159111235406904/300';
