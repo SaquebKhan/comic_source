@@ -1,3 +1,12 @@
 #hero {
     font-family: 'Comic Neue', cursive;
 }
+#text {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #FF0000;;
+    color: black;
+    font-size: 27px;
+}
+
+#comics {
+    background-size: 1000px; 
+}
