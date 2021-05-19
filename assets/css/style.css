@@ -10,3 +10,8 @@
 #comics {
     background-size: 1000px; 
 }
+
+.hero-display {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
