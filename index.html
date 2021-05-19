@@ -8,35 +8,32 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/style.css">
 <title>Superhero</title>
 </head>
 <body>
-   <section class="hero is-danger">
-        <div class="hero-body">
-          <p class="title">
-            Marvel@Marvel
+    <section class="hero is-link is-medium" id="hero">
+        <div class="hero-body has-text-centered">
+          <p class="title is-size-1">
+            ComicSource!
           </p>
-          <p class="subtitle">
-            A JJS Production
+          <p class="subtitle is-size-6">
+            A JJS Production <i class="fas fa-dice-d20"></i>
           </p>
         </div>
-    </section>
-    <div class="tabs">
-        <ul>
-          <li class="is-active"><a>Comics</a></li>
-          <li><a>Hero Name</a></li>
-          <li><a>Powers</a></li>
-        </ul>
-      </div>
-      
+      </section>
+      <section class="section is-medium has-text-centered">
+        <h2 class="subtitle is-size-4">
+         Search for your favorite <strong>Superhero</strong> or villain and learn everything you've ever wanted to know about them!
+        </h2>
+        <div class="control">
+            <input class="input is-focused is-size-4" style="width: 40%;" type="text" placeholder="Name of Superhero or villain here...">
+            <button class="button is-danger is-size-4" id="myBtn" onclick="myFunction()">Search</button>
+          </div>
+      </section>     
     
-    
-        <button class="button is-black">Hero</button>
-   
-    
-      
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
