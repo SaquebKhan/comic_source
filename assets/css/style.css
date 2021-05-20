@@ -11,7 +11,23 @@
     background-size: 1000px; 
 }
 
-.hero-display {
+#hero-display {
     display: grid;
     grid-template-columns: repeat(2, auto);
+}
+
+ul {
+    font-size: 20px;
+}
+
+ul #hero-name {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#hero-img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
