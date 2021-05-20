@@ -11,6 +11,7 @@ function goToSearch() {
 
   var userSearch = searchInput.value;
   console.log(userSearch);
+ 
   var url = 'https://www.superheroapi.com/api.php/' + API_KEY + '/search/' + userSearch;
   console.log(url);
   fetch(url)
@@ -21,17 +22,25 @@ function goToSearch() {
       var heros = heroes.results[0]
       console.log(heroes);
       $('#hero-name').append(heros.name);
+      $('#hero-publisher').append("Publisher: " + heros.biography.publisher);
+      $('#hero-height').append("Height: " + heros.appearance.height[0]);
+      $('#hero-weight').append("Weight: " + heros.appearance.weight[0]);
       $('#hero-combat').append("Combat: " + heros.powerstats.combat);
       $('#hero-durability').append("Durability: " + heros.powerstats.durability);
       $('#hero-intelligence').append("Intelligence: " + heros.powerstats.intelligence);
       $('#hero-power').append("Power: " + heros.powerstats.power);
       $('#hero-speed').append("Speed: " + heros.powerstats.speed);
       $('#hero-strength').append("Strength: " + heros.powerstats.strength);
-      
+
+     
+     
       
       console.log(heros.image.url);
       $('#hero-img').attr("src", heros.image.url)
       
+      localStorage.setItem(JSON.stringify(heros), JSON.stringify(userSearch));
+      
     });
-  
+
 }
+
