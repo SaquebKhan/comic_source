@@ -13,7 +13,7 @@
 
 #hero-display {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
 }
 
 ul {
