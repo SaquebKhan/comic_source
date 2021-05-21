@@ -1,11 +1,12 @@
 var searchInput = document.getElementById("search")
 var API_KEY = '10159111235406904'
+var API_KEY2 = 'f9297eb5'
 // var userInput = 
 
 
 // var requestUrl = 'https://superheroapi.com/api.php/' + API_KEY + '/search/' + userInput;
 
-
+// var url2 = 'https://www.omdbapi.com/?t=' + userSearch + '&apikey=' + API_KEY2;
 
 function goToSearch() {
 
@@ -13,7 +14,9 @@ function goToSearch() {
   console.log(userSearch);
  
   var url = 'https://www.superheroapi.com/api.php/' + API_KEY + '/search/' + userSearch;
+  var url2 = 'https://www.omdbapi.com/?t=' + userSearch + '&apikey=' + API_KEY2;
   console.log(url);
+  console.log(url2);
   fetch(url)
     .then(response => {
       return response.json();
@@ -21,6 +24,20 @@ function goToSearch() {
     .then(heroes => {
       var heros = heroes.results[0]
       console.log(heroes);
+     $('#search').val("");
+     // $('#hero-list').empty();
+     $('#hero-name').empty();
+     $('#hero-publisher').empty();
+     $('#hero-height').empty();
+     $('#hero-weight').empty();
+     $('#hero-combat').empty();
+     $('#hero-intelligence').empty();
+     $('#hero-durability').empty();
+     $('#hero-power').empty();
+     $('#hero-speed').empty();
+     $('#hero-strength').empty();
+
+     
       $('#hero-name').append(heros.name);
       $('#hero-publisher').append("Publisher: " + heros.biography.publisher);
       $('#hero-height').append("Height: " + heros.appearance.height[0]);
