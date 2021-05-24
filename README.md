@@ -1,6 +1,6 @@
 # ComicSource!
 ## Rutgers Coding Bootcamp Group Project #1
-### Click here to open website.
+### [Click here to open website.](https://saquebkhan.github.io/comic_source/)
 ## Group #5 Team Members:
 #### [Saqueb Khan](https://github.com/SaquebKhan)
 #### [Jorge Viera](https://github.com/Jorgevier)
